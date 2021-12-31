@@ -57,7 +57,8 @@ export function Movies({
           {show ? <ExpandLessIcon /> : <ExpandMoreIcon />}
         </IconButton>
         <p className="rating" style={styles}>
-          ⭐{rating}
+          <span role="img">⭐</span>
+          {rating}
         </p>
       </CardActions>
       {show ? <p>{summary}</p> : ""}
