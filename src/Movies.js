@@ -57,7 +57,9 @@ export function Movies({
           {show ? <ExpandLessIcon /> : <ExpandMoreIcon />}
         </IconButton>
         <p className="rating" style={styles}>
-          <span role="img">⭐</span>
+          <span role="img" aria-label="icon">
+            ⭐
+          </span>
           {rating}
         </p>
       </CardActions>

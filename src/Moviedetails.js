@@ -34,9 +34,10 @@ export function Moviedetails() {
       <div className="movie-detail-container">
         <div className="movie-specs">
           <h3>{movie.name}</h3>
-          // eslint-disable-next-line
           <p style={styles}>
-            <span role="img">⭐</span>
+            <span role="img" aria-label="icon">
+              ⭐
+            </span>
             {movie.rating}
           </p>
         </div>
