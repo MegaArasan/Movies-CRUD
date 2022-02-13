@@ -11,11 +11,13 @@ export function Counter({ editButton, deleteButton }) {
     <CardActions>
       <IconButton onClick={() => setlike(like + 1)}>
         <Badge badgeContent={like} color="primary">
+        // eslint-disable-next-line
         <span role="img">👍</span>
         </Badge>{" "}
       </IconButton>
 
       <IconButton onClick={() => setdislike(dislike + 1)}>
+        // eslint-disable-next-line
         <Badge badgeContent={dislike} color="error">
         <span role="img">👎</span>
         </Badge>{" "}
