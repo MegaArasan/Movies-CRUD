@@ -61,7 +61,7 @@ function Updatemovie({ movie }) {
     }).then(() => history.push("/movielist"));
   };
   return (
-    <section className="addmov">
+    <section className="editmov">
       <form className="add-movie-form" onSubmit={handleSubmit}>
         <TextField
           id="poster"
