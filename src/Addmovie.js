@@ -53,6 +53,7 @@ export function Addmovie() {
     <form className="add-movie-form" onSubmit={handleSubmit}>
       <TextField
         required
+        fullWidth
         id="poster"
         name="poster"
         label="Poster url"
@@ -66,6 +67,7 @@ export function Addmovie() {
       />
       <TextField
         required
+        fullWidth
         id="name"
         name="name"
         label="Movie Name"
@@ -80,6 +82,7 @@ export function Addmovie() {
 
       <TextField
         required
+        fullWidth
         id="rating"
         name="rating"
         label="Rating"
@@ -94,6 +97,7 @@ export function Addmovie() {
 
       <TextField
         required
+        fullWidth
         id="summary"
         name="summary"
         label="Summary"
@@ -112,6 +116,7 @@ export function Addmovie() {
         name="trailer"
         label="trailer"
         variant="standard"
+        fullWidth
         // onChange={(event) => settrailer(event.target.value)}
         onChange={handleChange}
         onBlur={handleBlur}

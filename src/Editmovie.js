@@ -68,6 +68,7 @@ function Updatemovie({ movie }) {
         name="poster"
         label="Poster url"
         variant="standard"
+        fullWidth
         // onChange={(event) => setposter(event.target.value)}
         onChange={handleChange}
         onBlur={handleBlur}
@@ -81,6 +82,7 @@ function Updatemovie({ movie }) {
         name="name"
         label="Movie Name"
         variant="standard"
+        fullWidth
         // onChange={(event) => setname(event.target.value)}
         onChange={handleChange}
         onBlur={handleBlur}
@@ -94,6 +96,7 @@ function Updatemovie({ movie }) {
         id="rating"
         name="rating"
         label="Rating"
+        fullWidth
         variant="standard"
         // onChange={(event) => setrating(event.target.value)}
         onChange={handleChange}
@@ -108,6 +111,7 @@ function Updatemovie({ movie }) {
         id="summary"
         name="summary"
         label="Summary"
+        fullWidth
         variant="standard"
         // onChange={(event) => setsummary(event.target.value)}
         onChange={handleChange}
@@ -123,6 +127,7 @@ function Updatemovie({ movie }) {
         name="trailer"
         label="trailer"
         variant="standard"
+        fullWidth
         // onChange={(event) => settrailer(event.target.value)}
         onChange={handleChange}
         onBlur={handleBlur}
