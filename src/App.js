@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { Addcolor } from "./Addcolor";
+// import { Addcolor } from "./Addcolor";
 import { Movielist } from "./Movielist";
 import { Addmovie } from "./Addmovie";
 import { Editmovie } from "./Editmovie";
@@ -68,14 +68,14 @@ export default function App() {
               >
                 Movielist
               </Button>
-              <Button
+              {/* <Button
                 variant="text"
                 color="inherit"
                 sx={{ display: { xs: "none", sm: "block" } }}
                 onClick={() => history.push("/Addcolor")}
               >
                 Addcolor
-              </Button>
+              </Button> */}
               <IconButton
                 onClick={toggleColorMode}
                 color="inherit"
@@ -131,13 +131,13 @@ export default function App() {
                 >
                   Movielist
                 </Button>
-                <Button
+                {/* <Button
                   variant="text"
                   color="inherit"
                   onClick={() => history.push("/Addcolor")}
                 >
                   Addcolor
-                </Button>
+                </Button> */}
               </Drawer>
             </Toolbar>
           </AppBar>
@@ -163,9 +163,9 @@ export default function App() {
               <Movielist />
             </Route>
 
-            <Route path="/Addcolor">
+            {/* <Route path="/Addcolor">
               <Addcolor />
-            </Route>
+            </Route> */}
             <Route path="**">
               <Notfound />
             </Route>

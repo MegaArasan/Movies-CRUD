@@ -113,6 +113,7 @@ function Updatemovie({ movie }) {
           name="summary"
           label="Summary"
           fullWidth
+          multiline
           variant="standard"
           // onChange={(event) => setsummary(event.target.value)}
           onChange={handleChange}

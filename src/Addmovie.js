@@ -97,6 +97,7 @@ export function Addmovie() {
         <TextField
           sx={{ margin: "10px" }}
           fullWidth
+          multiline
           id="summary"
           name="summary"
           label="Summary"
