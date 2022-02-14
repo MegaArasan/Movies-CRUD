@@ -61,84 +61,81 @@ function Updatemovie({ movie }) {
     }).then(() => history.push("/movielist"));
   };
   return (
-    <form className="add-movie-form" onSubmit={handleSubmit}>
-      <TextField
-        required
-        id="poster"
-        name="poster"
-        label="Poster url"
-        variant="standard"
-        fullWidth
-        // onChange={(event) => setposter(event.target.value)}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.poster}
-        error={errors.poster && touched.poster}
-        helperText={errors.poster && touched.poster && errors.poster}
-      />
-      <TextField
-        required
-        id="name"
-        name="name"
-        label="Movie Name"
-        variant="standard"
-        fullWidth
-        // onChange={(event) => setname(event.target.value)}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.name}
-        error={errors.name && touched.name}
-        helperText={errors.name && touched.name && errors.name}
-      />
+    <section className="addmov">
+      <form className="add-movie-form" onSubmit={handleSubmit}>
+        <TextField
+          id="poster"
+          name="poster"
+          label="Poster url"
+          variant="standard"
+          fullWidth
+          // onChange={(event) => setposter(event.target.value)}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.poster}
+          error={errors.poster && touched.poster}
+          helperText={errors.poster && touched.poster && errors.poster}
+        />
+        <TextField
+          id="name"
+          name="name"
+          label="Movie Name"
+          variant="standard"
+          fullWidth
+          // onChange={(event) => setname(event.target.value)}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.name}
+          error={errors.name && touched.name}
+          helperText={errors.name && touched.name && errors.name}
+        />
 
-      <TextField
-        required
-        id="rating"
-        name="rating"
-        label="Rating"
-        fullWidth
-        variant="standard"
-        // onChange={(event) => setrating(event.target.value)}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.rating}
-        error={errors.rating && touched.rating}
-        helperText={errors.rating && touched.rating && errors.rating}
-      />
+        <TextField
+          id="rating"
+          name="rating"
+          label="Rating"
+          fullWidth
+          variant="standard"
+          // onChange={(event) => setrating(event.target.value)}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.rating}
+          error={errors.rating && touched.rating}
+          helperText={errors.rating && touched.rating && errors.rating}
+        />
 
-      <TextField
-        required
-        id="summary"
-        name="summary"
-        label="Summary"
-        fullWidth
-        variant="standard"
-        // onChange={(event) => setsummary(event.target.value)}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.summary}
-        error={errors.summary && touched.summary}
-        helperText={errors.summary && touched.summary && errors.summary}
-      />
+        <TextField
+          id="summary"
+          name="summary"
+          label="Summary"
+          fullWidth
+          variant="standard"
+          // onChange={(event) => setsummary(event.target.value)}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.summary}
+          error={errors.summary && touched.summary}
+          helperText={errors.summary && touched.summary && errors.summary}
+        />
 
-      <TextField
-        required
-        id="trailer"
-        name="trailer"
-        label="trailer"
-        variant="standard"
-        fullWidth
-        // onChange={(event) => settrailer(event.target.value)}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.trailer}
-        error={errors.trailer && touched.trailer}
-        helperText={errors.trailer && touched.trailer && errors.trailer}
-      />
-      <Button type="submit" variant="outlined">
-        save
-      </Button>
-    </form>
+        <TextField
+          id="trailer"
+          name="trailer"
+          label="trailer"
+          variant="standard"
+          fullWidth
+          // onChange={(event) => settrailer(event.target.value)}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.trailer}
+          error={errors.trailer && touched.trailer}
+          helperText={errors.trailer && touched.trailer && errors.trailer}
+        />
+        <Button type="submit" variant="outlined">
+          save
+        </Button>
+      </form>
+    </section>
   );
 }
 const formvalidationSchema = Yup.object({
