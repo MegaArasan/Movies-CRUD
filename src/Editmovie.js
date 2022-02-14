@@ -61,9 +61,10 @@ function Updatemovie({ movie }) {
     }).then(() => history.push("/movielist"));
   };
   return (
-    <section className="editmov">
+    <section className="addmov">
       <form onSubmit={handleSubmit}>
         <TextField
+          sx={{ margin: "10px" }}
           id="poster"
           name="poster"
           label="Poster url"
@@ -77,6 +78,7 @@ function Updatemovie({ movie }) {
           helperText={errors.poster && touched.poster && errors.poster}
         />
         <TextField
+          sx={{ margin: "10px" }}
           id="name"
           name="name"
           label="Movie Name"
@@ -91,6 +93,7 @@ function Updatemovie({ movie }) {
         />
 
         <TextField
+          sx={{ margin: "10px" }}
           id="rating"
           name="rating"
           label="Rating"
@@ -105,6 +108,7 @@ function Updatemovie({ movie }) {
         />
 
         <TextField
+          sx={{ margin: "10px" }}
           id="summary"
           name="summary"
           label="Summary"
@@ -119,6 +123,7 @@ function Updatemovie({ movie }) {
         />
 
         <TextField
+          sx={{ margin: "10px" }}
           id="trailer"
           name="trailer"
           label="trailer"

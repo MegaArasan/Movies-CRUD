@@ -53,6 +53,7 @@ export function Addmovie() {
     <section className="addmov">
       <form onSubmit={handleSubmit}>
         <TextField
+          sx={{ margin: "10px" }}
           fullWidth
           id="poster"
           name="poster"
@@ -66,6 +67,7 @@ export function Addmovie() {
           helperText={errors.poster && touched.poster && errors.poster}
         />
         <TextField
+         sx={{ margin: "10px" }}
           fullWidth
           id="name"
           name="name"
@@ -79,6 +81,7 @@ export function Addmovie() {
           helperText={errors.name && touched.name && errors.name}
         />
         <TextField
+         sx={{ margin: "10px" }}
           fullWidth
           id="rating"
           name="rating"
@@ -92,6 +95,7 @@ export function Addmovie() {
           helperText={errors.rating && touched.rating && errors.rating}
         />
         <TextField
+         sx={{ margin: "10px" }}
           fullWidth
           id="summary"
           name="summary"
@@ -105,6 +109,7 @@ export function Addmovie() {
           helperText={errors.summary && touched.summary && errors.summary}
         />
         <TextField
+         sx={{ margin: "10px" }}
           id="trailer"
           name="trailer"
           label="trailer"
