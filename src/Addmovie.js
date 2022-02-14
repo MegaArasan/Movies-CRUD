@@ -51,7 +51,7 @@ export function Addmovie() {
   };
   return (
     <section className="addmov">
-      <form className="add-movie-form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <TextField
           fullWidth
           id="poster"

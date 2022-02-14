@@ -4,14 +4,6 @@
   height: min-content;
   align-items: center;
 }
-
-.add-movie-form {
-  width: 100%;
-  margin: 20px;
-  gap: 24px;
-  display: flex;
-  flex-direction: column;
-}
 nav {
   margin: 20px;
   gap: 24px;

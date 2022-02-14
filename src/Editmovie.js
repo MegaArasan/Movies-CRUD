@@ -62,7 +62,7 @@ function Updatemovie({ movie }) {
   };
   return (
     <section className="editmov">
-      <form className="add-movie-form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <TextField
           id="poster"
           name="poster"
