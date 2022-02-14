@@ -19,6 +19,7 @@ import { API_URL } from "./glopal-constants.js";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
+import { Typography } from "@mui/material";
 
 export default function App() {
   const [movies, setmovies] = useState([]);
@@ -50,6 +51,7 @@ export default function App() {
         <div className="App">
           <AppBar position="static">
             <Toolbar variant="dense">
+              <Typography variant="h4">Movies</Typography>
               <Button
                 variant="text"
                 color="inherit"
