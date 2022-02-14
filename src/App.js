@@ -137,13 +137,6 @@ export default function App() {
               <Button
                 variant="text"
                 color="inherit"
-                onClick={() => history.push("/Dashboard")}
-              >
-                Dashboard
-              </Button>
-              <Button
-                variant="text"
-                color="inherit"
                 onClick={() => history.push("/movielist")}
               >
                 Movielist
@@ -169,7 +162,7 @@ export default function App() {
           <Switch>
             {/* Each route is case, eg. - case '/about': */}
             <Route exact path="/">
-              <Home />
+              <Redirect to="/movielist" />
             </Route>
             <Route path="/movielist/edit/:id">
               <Editmovie movies={movies} setmovies={setmovies} />
@@ -186,9 +179,7 @@ export default function App() {
             <Route path="/movielist">
               <Movielist />
             </Route>
-            <Route path="/Dashboard">
-              <Dashboard />
-            </Route>
+
             <Route path="/Addcolor">
               <Addcolor />
             </Route>
@@ -202,20 +193,7 @@ export default function App() {
   );
 }
 
-function Home() {
-  return (
-    <div>
-      <h2>Home, Welcome All!!!</h2>
-    </div>
-  );
-}
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard ***</h2>
-    </div>
-  );
-}
+
 function Notfound() {
   return (
     <div>
