@@ -130,13 +130,6 @@ export default function App() {
               <Button
                 variant="text"
                 color="inherit"
-                onClick={() => history.push("/")}
-              >
-                Homepage
-              </Button>
-              <Button
-                variant="text"
-                color="inherit"
                 onClick={() => history.push("/movielist")}
               >
                 Movielist
@@ -192,7 +185,6 @@ export default function App() {
     </ThemeProvider>
   );
 }
-
 
 function Notfound() {
   return (
