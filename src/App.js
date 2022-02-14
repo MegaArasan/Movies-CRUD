@@ -51,7 +51,7 @@ export default function App() {
         <div className="App">
           <AppBar position="static">
             <Toolbar variant="dense">
-              <Typography variant="h4">Movies</Typography>
+              <Typography variant="h5">Movies</Typography>
               <Button
                 variant="text"
                 color="inherit"
