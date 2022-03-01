@@ -27,10 +27,10 @@ export function Movies({
     fontWeight: "bold",
   };
   return (
-    <Card sx={{ maxWidth: 320 }}>
+    <Card sx={{ maxWidth: 320, width: "100%" }}>
       <CardMedia
         component="img"
-        height="250"
+        height="350"
         image={poster}
         alt="Paella dish"
       />
